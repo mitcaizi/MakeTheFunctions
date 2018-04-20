@@ -4,8 +4,36 @@
 using namespace std;
 
 //prototypes:
+void fillWith (vector<int> &a, int x);
+bool isPositive(int a);
+void printaVector(vector<int> a);
+bool isPositive (int a)
+{
+if (a>0)
+{
+return true;
+}
+else 
+{
+return false;
+}
+}
 
+void fillWith(vector<int> &a, int x)
+{
+for (int i=0; i<a.size(); i++)
+{
+a[i] = x;
+}
+}
 
+void printVector(vector<int> a)
+{
+for(int i; i<a.size(); i++)
+{
+cout<<a[i]<<" ";
+}
+}
 /////DO NOT TOUCH/////
 int main()
 {
